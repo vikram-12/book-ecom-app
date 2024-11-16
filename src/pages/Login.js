@@ -26,8 +26,8 @@ export const Login = () => {
     }
   };
   const handleGuestLogin = async () => {
-    email.current.value = "guest.user@codebook.com";
-    password.current.value = "guestuser";
+    email.current.value = `${process.env.REACT_APP_GUEST_LOGIN}`;
+    password.current.value = `${process.env.REACT_APP_GUEST_PASS}`;
     try {
       const authDetails = {
         email: email.current.value,
