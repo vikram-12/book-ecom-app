@@ -24,7 +24,7 @@ export const DropdownLoggedIn = ({ setShowDropdown }) => {
       }
     };
     fetchUser();
-  }, []);
+  }, []); //eslint-disable-line
   return (
     <div
       id="dropdownAvatar"
