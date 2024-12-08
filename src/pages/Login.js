@@ -25,23 +25,23 @@ export const Login = () => {
       });
     }
   };
-  const handleGuestLogin = async () => {
-    email.current.value = `${process.env.REACT_APP_GUEST_LOGIN}`;
-    password.current.value = `${process.env.REACT_APP_GUEST_PASS}`;
-    try {
-      const authDetails = {
-        email: email.current.value,
-        password: password.current.value,
-      };
-      const data = await login(authDetails);
-      data.accessToken ? navigate("/products") : toast.error(data);
-    } catch (error) {
-      toast.error(error.message, {
-        closeButton: true,
-        position: "bottom-center",
-      });
-    }
-  };
+  // const handleGuestLogin = async () => {
+  //   email.current.value = `${process.env.REACT_APP_GUEST_LOGIN}`;
+  //   password.current.value = `${process.env.REACT_APP_GUEST_PASS}`;
+  //   try {
+  //     const authDetails = {
+  //       email: email.current.value,
+  //       password: password.current.value,
+  //     };
+  //     const data = await login(authDetails);
+  //     data.accessToken ? navigate("/products") : toast.error(data);
+  //   } catch (error) {
+  //     toast.error(error.message, {
+  //       closeButton: true,
+  //       position: "bottom-center",
+  //     });
+  //   }
+  // };
   return (
     <main>
       <section>
