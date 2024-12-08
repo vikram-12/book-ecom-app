@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Codebook Web App.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The CodeBook E-Commerce Application is a modern, responsive online shopping platform built with React and Tailwind CSS. It offers essential e-commerce features such as product browsing, authentication via JWT, cart management, and a seamless checkout process. Designed to provide an intuitive user experience, the app leverages Context API for state management and is backed by a mock JSON Server. Deployed on Netlify, it is ideal for showcasing products and enhancing digital business strategies.
 
-## Available Scripts
+*This application has been developed  for learning frontend developement using react.js and various advance concepts around react.*
 
-In the project directory, you can run:
+## Technical Overview
+The Book E-Commerce Application is a robust platform for browsing and purchasing books online. It combines modern tools and best practices for seamless functionality and an engaging user experience. Key technical details include:
 
-### `npm start`
+### Frontend Development:
+- Built using *React.js* for a responsive and interactive UI.
+- *Tailwind CSS* ensures a clean, modern design with utility-first styling.Responsive design is implemented and light-dark theme has been implemented
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### State Management:
+- Employs *Context API* and *reducers* for managing application-wide state efficiently.
+  
+### Authentication:
+- Secured with *JWT (JSON Web Token)* for login and user session handling.
+  
+### Backend & APIs:
+- Uses *JSON Server* as a mock backend to simulate real API behavior during development.
+(The mock backend is created using node and express ,where  json server is used, so that it can be deployed ,and can be used in production)->The sole purpose was to demostrate
+api integration and jwt token for authentication
+  
+### Core Features:
+- Product Listings: Browse a catalog of books with detailed information.
+- Search & Filter: Intuitive tools to find specific books.
+- Cart Management: Add, update, and review items in the shopping cart.
+- Checkout Process: Streamlined steps for completing purchases.(This is just a UI demonstration for now,where you can place the order and view the same in dashboard on success.
+No realtime purchase or any such itegration is done).
+  
+### Deployment:
+- Frontend deployed on Netlify for fast and reliable access.
+- Backend hosted on Render, simulating API behavior.(Free services are used , apis can be slow)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## How to run on Local
 
-### `npm test`
+- Clone the repository [Repo link](https://github.com/vikram-12/book-ecom-app)
+- Open VS code. Open Terminal and run command **npm i**
+- Once packages are installed run **npm start** to start the frontend.
+- Run **json-server data/db.json -m ./node_modules/json-server-auth  -r data/routes.json  --port 8000** in a new terminal to run the backend.
+- Create a .env file and update REACT_APP_HOST value with the localhost url(http://localhost:8000). Stop the frontend server , and restart and the application will be up and running.
+- For guest user(Login Guest) to work , first , register a user , get the user email and password and set REACT_APP_GUEST_LOGIN & REACT_APP_GUEST_PASS in .env file respectively.
+- Stop the frontend server , run again **npm start** , the application will be up and running to use.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Information
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+*This application is developed for learning purpose(specifically frontend development related topics). In this project I have learned about react js , context , reducer , hooks in react(useEffect ,useState , useRef , useReducer , useContext) , custom hooks , api integration(apis made with json-server) , learned to structure a project , creating filters , react-router , react-toastify(a library to show toast message),html/css , tailwindCSS , responsive design , dark-light theme and javascript.*
