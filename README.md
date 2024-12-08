@@ -40,7 +40,6 @@ No realtime purchase or any such itegration is done).
 - Once packages are installed run **npm start** to start the frontend.
 - Run **json-server data/db.json -m ./node_modules/json-server-auth  -r data/routes.json  --port 8000** in a new terminal to run the backend.
 - Create a .env file and update REACT_APP_HOST value with the localhost url(http://localhost:8000). Stop the frontend server , and restart and the application will be up and running.
-- For guest user(Login Guest) to work , first , register a user , get the user email and password and set REACT_APP_GUEST_LOGIN & REACT_APP_GUEST_PASS in .env file respectively.
 - Stop the frontend server , run again **npm start** , the application will be up and running to use.
 
 
